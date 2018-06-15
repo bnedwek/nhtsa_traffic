@@ -1,0 +1,8 @@
+model {
+  for (i in 1:N) {
+    time[i] ~ dgamma(a,b)
+  }
+  
+  a ~ dunif(1,100)
+  b ~ dunif(1,100)
+}

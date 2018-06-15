@@ -1,2 +1,7 @@
 data
 .Rproj.user
+<<<<<<< HEAD
+=======
+.Rhistory
+*.RData
+>>>>>>> b0ff2ad25b524a86efc4559066aa9759777aeef4
