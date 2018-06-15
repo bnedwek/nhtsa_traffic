@@ -1,10 +1,7 @@
 library(dplyr)
 library(ggplot2)
-<<<<<<< HEAD
-=======
 library(ggmap)
 library(rjags)
->>>>>>> b0ff2ad25b524a86efc4559066aa9759777aeef4
 
 # Read datasets #
 #---------------#
@@ -41,8 +38,6 @@ names(vehicles) <- tolower(names(vehicles))
 accidents %>%
   group_by(rur_urb) %>%
   summarize(mean_f = mean(fatals))
-<<<<<<< HEAD
-=======
 
 # Get drivers who died
 drivers <- persons[persons$seat_pos == 11 & persons$inj_sev %in% c(4,6),]
@@ -69,4 +64,3 @@ map <- get_map(location='United States',
 
 ggmap(map) + 
   geom_point(data=map.data, aes(x=longitud, y=latitude), alpha=0.5)
->>>>>>> b0ff2ad25b524a86efc4559066aa9759777aeef4
