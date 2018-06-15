@@ -1,4 +1,5 @@
 library(dplyr)
+library(ggplot2)
 
 # Read datasets #
 accidents <- read.csv('data/FARS2016NationalCSV/accident.csv', stringsAsFactors=F)
